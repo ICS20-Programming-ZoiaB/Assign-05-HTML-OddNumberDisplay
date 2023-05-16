@@ -18,25 +18,27 @@ function numbersSent() {
   // initializing the counter variable to the minNumber
   let counter = minNumber;
 
-  // if statement checks if minNumber > maxNumber (there is an error)
-  if (minNumber > maxNumber) {
-    message = "Ensure that the minimum is less than or equal to the maximum.";
+  if ((isNaN(minNumber) || (isNaN(maxNumber)))) {
+    message = "Please enter valid numbers.";
   }
 
   // if statement checks if either number is negative
   else if (minNumber < 0 || maxNumber < 0) {
     message = "Enter positive integers for both the minimum and maximum.";
   }
-
-  else if ((isNaN(minNumber) || (isNaN(maxNumber)))) {
-    message = "Please enter valid numbers.";
+  
+  // if statement checks if minNumber > maxNumber (there is an error)
+  else if (minNumber > maxNumber) {
+    message = "Ensure that the minimum is less than or equal to the maximum.";
   }
+
+
 
   // else, complete while loop to create list of odd numbers between min and max
   else {
     // while loop that specifies the range
     while (counter >= minNumber && counter <= maxNumber) {
-      // if statement checks for odd numbers, provided that the condition in the while statement is true.
+      // if statement checks for odd numbers, provided that the condition in the while statement is true. It uses the remainder operand.
       if (counter % 2 == 1) {
         numbers += counter + "<br>";
       }

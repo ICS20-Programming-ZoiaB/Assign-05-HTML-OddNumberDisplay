@@ -32,8 +32,6 @@ function numbersSent() {
     message = "Ensure that the minimum is less than or equal to the maximum.";
   }
 
-
-
   // else, complete while loop to create list of odd numbers between min and max
   else {
     // while loop that specifies the range

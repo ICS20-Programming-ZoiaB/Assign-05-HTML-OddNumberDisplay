@@ -36,7 +36,7 @@ function numbersSent() {
   else {
     // while loop that specifies the range
     while (counter >= minNumber && counter <= maxNumber) {
-      // if statement checks for odd numbers, provided that the condition in the while statement is true. It uses the remainder operand.
+      // if statement checks for odd numbers, provided that the condition in the while statement is true. It uses an operator that determines if there is a remainder when the number is divided by 2 (method taken from https://www.tutorialspoint.com/How-to-determine-if-a-number-is-odd-or-even-in-JavaScript)
       if (counter % 2 == 1) {
         numbers += counter + "<br>";
       }
@@ -48,3 +48,4 @@ function numbersSent() {
   // displaying the results (the range of odd numbers) back to the user
   document.getElementById("results").innerHTML = message;
 }
+

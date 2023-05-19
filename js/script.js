@@ -42,7 +42,7 @@ function numbersSent() {
       }
       counter++;
     }
-    message = "Here is a list of all the odd numbers between the minimum and maximum that you entered:<br><br>" + numbers;
+    message = "Here are all the odd numbers between your selected numbers:<br><br>" + numbers;
   }
 
   // displaying the results (the range of odd numbers) back to the user

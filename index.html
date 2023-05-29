@@ -34,34 +34,32 @@
       
     <!-- Form for user input -->
     <form action="javascript:numbersSent()">
-      <label for="min number">Number you would like the list to start at:
-</label>
-      <input type="number" step="1" id="min-number" placeholder="Minimum"><br><br>
-      <label for="max number">Enter your stopping number:</label>
-      <input type="number" step="1" id="max-number" placeholder="Maximum"><br><br>
+      <label for="min number">Number you would like the list to start at:</label>
+        <input type="number" step="1" id="min-number" placeholder="Minimum"><br><br>
+        <label for="max number">Enter your stopping number:</label>
+        <input type="number" step="1" id="max-number" placeholder="Maximum"><br><br>
 
     <br>
     <p>Do you want the list to be in reverse order?</p>
-    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="reversed">
+      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="reversed">
         <input type="radio" id="reversed" class="mdl-radio__button" name="options" value="1">
         <span class="mdl-radio__label">Yes</span>
       </label>
-
-      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="not-reversed">
+      
+      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="not-reversed" checked>
         <input type="radio" id="not-reversed" class="mdl-radio__button" name="options" value="2">
         <span class="mdl-radio__label">No</span>
       </label>
+      <br><br>
       
-    <input type="submit" value="Submit Numbers" id="styled-button" button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+      <input type="submit" value="Submit Numbers" id="styled-button" button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
     </form>
-    
+
     <!-- Div for range of numbers to be displayed -->
     <div id="results"></div>
 
     <!-- Image -->
-    <center>
     <br>
     <img src="./images/odd-numbers.png" alt="Odd Numbers" length="400" width="400">
-    </center>
   </body>
 </html>

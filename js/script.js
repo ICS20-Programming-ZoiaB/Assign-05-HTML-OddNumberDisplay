@@ -27,11 +27,11 @@ function numbersSent() {
 
   //else, complete a loop to display list of odd numbers
   else {
-    //Determines which radio button to determine whether list of odd numbers should be reversed or not
+    //Determines which radio button is checked to determine whether list of odd numbers should be reversed or not
     const REVERSED = document.getElementById("reversed");
     if (REVERSED.checked) {
       let counter = maxNumber;
-      //Do while loop to display list of odd numbers
+      //Do while loop to display list of odd numbers in reverse
       do {
          // if statement checks for odd numbers, provided that the condition in the while statement is true. It uses an operator that determines if there is a remainder when the number is divided by 2 (method taken from https://www.tutorialspoint.com/How-to-determine-if-a-number-is-odd-or-even-in-JavaScript)
         if (counter % 2 !== 0) {

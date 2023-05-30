@@ -29,16 +29,17 @@
     
     <!-- Div for light orange background -->
     <h1>Odd Number Display, JS</h1>
-    <p>Input a positive starting number and then a positive stopping number, and this webpage will give you all the odd numbers in between!</p>
+    <p>Input a starting number and then a stopping number, and this webpage will give you all the odd numbers in between!</p>
     <h3>Your Input:</h3>
       
     <!-- Form for user input -->
     <form action="javascript:numbersSent()">
       <label for="min number">Number you would like the list to start at:</label>
-        <input type="number" step="1" id="min-number" placeholder="Minimum"><br><br>
-        <label for="max number">Enter your stopping number:</label>
-        <input type="number" step="1" id="max-number" placeholder="Maximum"><br><br>
+      <input type="number" step="1" id="min-number" placeholder="Minimum"><br><br>
+      <label for="max number">Enter your stopping number:</label>
+      <input type="number" step="1" id="max-number" placeholder="Maximum"><br><br>
 
+    <!-- Radio buttons for option to reverse list order -->
     <br>
     <p>Do you want the list to be in reverse order?</p>
       <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="reversed">
@@ -51,7 +52,8 @@
         <span class="mdl-radio__label">No</span>
       </label>
       <br><br>
-      
+
+      <!-- Button to submit input -->
       <input type="submit" value="Submit Numbers" id="styled-button" button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
     </form>
 

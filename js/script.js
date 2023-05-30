@@ -60,7 +60,7 @@ function numbersSent() {
     }
   }
 
-  // displaying the results (the range of odd numbers) back to the user
+  // displaying the results (the list of odd numbers) back to the user
   document.getElementById("results").innerHTML = message;
 }
 
